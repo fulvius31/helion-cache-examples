@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 390" role="img" aria-labelledby="title desc">
+<title id="title">Reuse a full-search winner during quick re-tuning</title>
+<desc id="desc">4096³ matmul · full → warm quick → cold quick · lower is better Warm quick: 45.8 s versus 225.7 s full (4.9× less wall time), at comparable kernel latency. Different efforts and a fixed run order: this is not a 4.9× speedup attributable to warm-start alone.</desc>
+<rect width="1040" height="390" rx="12" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#17293c">
+<text x="28" y="34" font-size="23" font-weight="650">Reuse a full-search winner during quick re-tuning</text>
+<text x="28" y="61" font-size="14" fill="#516174">4096³ matmul · full → warm quick → cold quick · lower is better</text>
+<text x="28" y="104" font-size="17" font-weight="600">End-to-end run time</text>
+<text x="28" y="154" font-size="14" >Cold full</text>
+<rect x="176" y="135" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="176" y="135" width="206.14" height="27" rx="3" fill="#526782"/>
+<text x="389.1393333333333" y="154" font-size="14" font-weight="600">225.7</text>
+<text x="28" y="203" font-size="14" >Warm quick</text>
+<rect x="176" y="184" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="176" y="184" width="41.83" height="27" rx="3" fill="#23834a"/>
+<text x="224.83066666666667" y="203" font-size="14" font-weight="600">45.8</text>
+<text x="28" y="252" font-size="14" >Cold quick</text>
+<rect x="176" y="233" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="176" y="233" width="81.74" height="27" rx="3" fill="#d87b24"/>
+<text x="264.74333333333334" y="252" font-size="14" font-weight="600">89.5</text>
+<text x="176" y="289" font-size="12" fill="#64748b">0</text>
+<text x="450" y="289" font-size="12" fill="#64748b" text-anchor="end">300 s</text>
+<text x="548" y="104" font-size="17" font-weight="600">Measured kernel time</text>
+<text x="548" y="154" font-size="14" >Cold full</text>
+<rect x="696" y="135" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="696" y="135" width="195.80" height="27" rx="3" fill="#526782"/>
+<text x="898.8019727979388" y="154" font-size="14" font-weight="600">100.0</text>
+<text x="548" y="203" font-size="14" >Warm quick</text>
+<rect x="696" y="184" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="696" y="184" width="194.63" height="27" rx="3" fill="#23834a"/>
+<text x="897.6283134732928" y="203" font-size="14" font-weight="600">99.4</text>
+<text x="548" y="252" font-size="14" >Cold quick</text>
+<rect x="696" y="233" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="696" y="233" width="197.80" height="27" rx="3" fill="#d87b24"/>
+<text x="900.804833139692" y="252" font-size="14" font-weight="600">101.1</text>
+<text x="696" y="289" font-size="12" fill="#64748b">0</text>
+<text x="970" y="289" font-size="12" fill="#64748b" text-anchor="end">140 µs</text>
+<text x="28" y="337" font-size="14" fill="#516174">Warm quick: 45.8 s versus 225.7 s full (4.9× less wall time), at comparable kernel latency.</text>
+<text x="28" y="358" font-size="14" fill="#516174">Different efforts and a fixed run order: this is not a 4.9× speedup attributable to warm-start alone.</text>
+</g></svg>

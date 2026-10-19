@@ -1,0 +1,41 @@
+{
+  "hardware": "NVIDIA B200",
+  "environment": {
+    "cuda": "13.0",
+    "driver": "580.173.02",
+    "torch": "2.13.0+cu130",
+    "python": "3.12",
+    "autotuner": "LFBOPatternSearch",
+    "helion_revision": "not recorded in the original run artifacts"
+  },
+  "provenance": "Recorded GPU runs from the original demo suite, not a new benchmark. Wall times are rounded from its results write-up; kernel times are from RESULT_JSON in the captured logs. Single runs, no error bars.",
+  "developer_iteration_1024": [
+    {"label": "Before edit, cold quick", "wall_s": 46.7, "kernel_ms": 0.03207040071487427},
+    {"label": "After edit, warm quick", "wall_s": 55.3, "kernel_ms": 0.031196160316467283, "population": 10, "cached_configs": 1},
+    {"label": "After edit, cold quick", "wall_s": 51.9, "kernel_ms": 0.032467200756073, "population": 9, "cached_configs": 0}
+  ],
+  "full_then_quick_4096": [
+    {"label": "Cold full", "wall_s": 225.7, "kernel_ms": 0.10004480361938477, "population": 100},
+    {"label": "Warm quick", "wall_s": 45.8, "kernel_ms": 0.09944512367248536, "population": 10},
+    {"label": "Cold quick", "wall_s": 89.5, "kernel_ms": 0.10106816291809081, "population": 9}
+  ],
+  "effort_escalation_1024": [
+    {"label": "Cold full", "wall_s": 83.8, "kernel_ms": 0.0310},
+    {"label": "Warm full", "wall_s": 88.9, "kernel_ms": 0.0319}
+  ],
+  "resilience_4096": [
+    {"label": "Original winner", "kernel_ms": 0.1046},
+    {"label": "Slow cached config", "kernel_ms": 0.2659},
+    {"label": "Forced warm full", "kernel_ms": 0.1010, "wall_s": 198.2}
+  ],
+  "remote_1024": {
+    "A": {"local_entries": 1, "remote_files": 1, "kernel_ms": 0.032009599606196086},
+    "B": {"local_entries": 1, "remote_files": 1, "kernel_ms": 0.03086293339729309},
+    "B_local_only": {"local_entries": 1, "remote_files": 1, "kernel_ms": 0.031139200925827025},
+    "C_edited": {"local_entries": 1, "remote_files": 1, "kernel_ms": 0.030755199988683066},
+    "D_outage": {"local_entries": 1, "kernel_ms": 0.03251519997914632},
+    "exact_hits_B_and_B_local": 2,
+    "read_failure_warnings": 1,
+    "write_failure_warnings": 1
+  }
+}

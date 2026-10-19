@@ -151,6 +151,8 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
 .venv
 env/
@@ -204,6 +206,24 @@ cython_debug/
 # .vscode/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
+
+# Local experiment artifacts (the portable demo is at the repository root).
+/helion-cache-examples/
+/helion-cache-examples.tar.gz
+/cache/
+/my_dev_cache/
+/remote_store/
+/remote_store_corrupt/
+/logs/
+/results/latest/
+.triton/
+*.best_config
+
+# Keep published results/recorded_b200.json and plots/ versionable.
+
+# macOS metadata
+.DS_Store
+._*
 
 # Ruff stuff:
 .ruff_cache/

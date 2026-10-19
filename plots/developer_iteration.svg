@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 390" role="img" aria-labelledby="title desc">
+<title id="title">Keep tuning knowledge across source edits</title>
+<desc id="desc">1024³ matmul · quick effort · same edited kernel · lower is better Warm-start transferred 1 prior winner: 10 initial configs versus 9 in the cold control. The warm result was ~3.9% lower latency, but took 3.4 s longer. No iteration-time speedup here.</desc>
+<rect width="1040" height="390" rx="12" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#17293c">
+<text x="28" y="34" font-size="23" font-weight="650">Keep tuning knowledge across source edits</text>
+<text x="28" y="61" font-size="14" fill="#516174">1024³ matmul · quick effort · same edited kernel · lower is better</text>
+<text x="28" y="104" font-size="17" font-weight="600">End-to-end run time</text>
+<text x="28" y="154" font-size="14" >Edited, warm quick</text>
+<rect x="176" y="135" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="176" y="135" width="202.03" height="27" rx="3" fill="#23834a"/>
+<text x="385.0293333333333" y="154" font-size="14" font-weight="600">55.3</text>
+<text x="28" y="203" font-size="14" >Edited, cold quick</text>
+<rect x="176" y="184" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="176" y="184" width="189.61" height="27" rx="3" fill="#d87b24"/>
+<text x="372.608" y="203" font-size="14" font-weight="600">51.9</text>
+<text x="176" y="240" font-size="12" fill="#64748b">0</text>
+<text x="450" y="240" font-size="12" fill="#64748b" text-anchor="end">75 s</text>
+<text x="548" y="104" font-size="17" font-weight="600">Measured kernel time</text>
+<text x="548" y="154" font-size="14" >Edited, warm quick</text>
+<rect x="696" y="135" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="696" y="135" width="189.95" height="27" rx="3" fill="#23834a"/>
+<text x="892.9499539269341" y="154" font-size="14" font-weight="600">31.2</text>
+<text x="548" y="203" font-size="14" >Edited, cold quick</text>
+<rect x="696" y="184" width="274" height="27" rx="3" fill="#e5ebf1"/>
+<rect x="696" y="184" width="197.69" height="27" rx="3" fill="#d87b24"/>
+<text x="900.6891779369778" y="203" font-size="14" font-weight="600">32.5</text>
+<text x="696" y="240" font-size="12" fill="#64748b">0</text>
+<text x="970" y="240" font-size="12" fill="#64748b" text-anchor="end">45 µs</text>
+<text x="28" y="337" font-size="14" fill="#516174">Warm-start transferred 1 prior winner: 10 initial configs versus 9 in the cold control.</text>
+<text x="28" y="358" font-size="14" fill="#516174">The warm result was ~3.9% lower latency, but took 3.4 s longer. No iteration-time speedup here.</text>
+</g></svg>
